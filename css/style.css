@@ -639,6 +639,48 @@ img {
    fill: var(--primary-white-color);
 }
 
+
+
+
+
+
+.footer-form-button {
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   padding: 28px 10px;
+
+   width: 200px;
+   height: 50px;
+
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+   border: none;
+   text-decoration: none;
+   cursor: pointer;
+   background: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+
+
+
+}
+
+.footer-icon-send {
+   fill: var(--primary-white-color);
+   margin-left: 10px;
+}
+
+
+
+
+
+
+
 /* Portfolio */
 .portfolio {
    padding-top: 94px;
@@ -776,8 +818,8 @@ img {
    top: 50%;
    left: 50%;
 
-   min-width: 500px;
-   min-height: 500px;
+   min-width: 528px;
+   min-height: 581px;
 
    background-color: var(--primary-white-color);
 
@@ -811,6 +853,80 @@ img {
 .close-icon {
    width: 18px;
    height: 18px;
+}
+
+/* Modal form */
+
+.form-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 23px;
+   margin-top: 40px;
+   margin-bottom: 12px;
+   text-align: center;
+   color: var(--primary-black-color);
+   outline: 1px solid red;
+}
+
+.form {
+   width: 528px;
+   outline: 1px solid red;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 40px;
+}
+
+.form-field {
+   outline: 1px solid royalblue;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+
+
+}
+
+.form-field label {
+   margin-bottom: 4px;
+   letter-spacing: 0.01em;
+   color: var(--upper-title-text);
+}
+
+.form-field input {
+   outline: 1px solid red;
+   margin: 0;
+   padding: 11px 12px;
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+}
+
+.form-comment {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.form-comment textarea::placeholder {
+   padding: 12px 16px;
+   color: rgba(117, 117, 117, 0.5);;
+}
+
+.form-checkbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+}
+
+
+
+.form-checkbox label {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   color: var(--upper-title-text);
+   margin-left: 8px;
 }
 
 
