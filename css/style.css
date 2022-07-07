@@ -598,10 +598,7 @@ img {
 }
 
 .footer-title {
-   font-family: var(--main-font);
    font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
    text-transform: uppercase;
    color: var(--primary-white-color);
    margin-bottom: 20px;
@@ -642,42 +639,66 @@ img {
 
 
 
+/* Footer form */
 
+.footer-form {
+   margin-left: 93px;
+}
+
+.footer-form-titel {
+   font-weight: 700;
+   text-transform: uppercase;
+   
+   color: var(--primary-white-color);
+
+   margin-bottom: 20px;
+}
+
+.footer-form-register {
+   display: flex;
+}
+
+.footer-form-register input {
+   width: 358px;
+   height: 50px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+}
 
 .footer-form-button {
-   display: flex;
+   display: inline-flex;
    align-items: center;
-   text-align: center;
-
-   padding: 28px 10px;
-
+   justify-content: center;
+ 
    width: 200px;
    height: 50px;
+   margin-left: 12px;
 
-
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.87;
-   letter-spacing: 0.06em;
    border: none;
-   text-decoration: none;
    cursor: pointer;
    background: var(--accent-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
 
+   text-decoration: none;
 
 
+
+}
+
+.footer-button-text {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+   color: var(--primary-white-color);
 }
 
 .footer-icon-send {
    fill: var(--primary-white-color);
    margin-left: 10px;
 }
-
-
-
-
 
 
 
