@@ -889,6 +889,7 @@ img {
 .form-title {
    margin-bottom: 30px;
    text-align: center;
+   outline: 1px solid tomato;
 }
 
 .form-text {
