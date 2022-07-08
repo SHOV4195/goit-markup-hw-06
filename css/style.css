@@ -898,6 +898,10 @@ img {
 }
 
 .form-field {
+   position: relative;
+
+
+
    outline: 1px solid royalblue;
    display: flex;
    flex-direction: column;
@@ -906,13 +910,34 @@ img {
 
 }
 
-.form-field label {
+.form-label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: translateY(-100%);
+
+
+
    margin-bottom: 4px;
    letter-spacing: 0.01em;
    color: var(--upper-title-text);
 }
 
+.form-icon {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.form-input:focus + .form-label {
+   tra
+}
+
 .form-field input {
+
+
+
+
    outline: 1px solid red;
    margin: 0;
    padding: 11px 12px;
