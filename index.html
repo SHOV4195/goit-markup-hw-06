@@ -580,8 +580,7 @@
       </div>
     </footer>
     <!-- Modal start -->
-    <!-- is-hidden -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- Modal form start -->
         <form class="form js-speaker-form">
@@ -623,7 +622,6 @@
               class="form-checkbox-input visually-hidden"
               type="checkbox"
               name="user-agreement"
-              checked
             />
             <span class="form-checkbox-custom">
               <svg class="form-checkbox-icon" width="11" height="9">
@@ -631,10 +629,12 @@
               </svg>
             </span>
             <span class="form-checkbox-agreement"> Соглашаюсь с рассылкой и принимаю</span>
-            <span class="form-checkbox-agreement-activ">Условия договора</span>
+            <a class="policity" href="">Условия договора</a>
           </label>
 
-          <button class="btn-form" type="submit">Отправить</button>
+          <button class="form-btn" type="submit">
+            <span class="form-btn-text">Отправить</span>
+          </button>
         </form>
         <!-- Modal form end -->
         <p></p>
