@@ -624,7 +624,8 @@ img {
    height: 44px;
 
    transition: 
-   background-color var(--timing-function);
+   background-color var(--timing-function),
+   color var(--timing-function);
 }
 
 .footer-social-link:hover,
@@ -752,6 +753,7 @@ img {
 
 .project-link {
    display: block;
+
    transition: box-shadow var(--timing-function);
 }
 
@@ -785,16 +787,6 @@ img {
    border-top: none;
 }
 
-/* .project-list {
-   transition: box-shadow var(--timing-function);
-}
-
-.project-list:hover,
-.project-list:focus {
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-      0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 
 .product-thumb {
    position: relative;
@@ -973,10 +965,10 @@ img {
    border-radius: 4px;
 
    outline: transparent;
-      
-   transition: border var(--timing-function);
 
    resize: none;
+
+   transition: border var(--timing-function);
 }
 
 .contact-form-message:focus {
@@ -1008,7 +1000,8 @@ img {
    outline-offset: -2px;
    border-radius: 2px;
 
-   transition: outline-color var(--timing-function), background-color var(--timing-function);
+   transition: outline-color var(--timing-function), 
+   background-color var(--timing-function);
 }
 
 .form-checkbox-input:checked + .form-checkbox-custom {
@@ -1019,6 +1012,8 @@ img {
 
 .form-checkbox-icon {
    fill: var(--primary-white-color);
+
+   transition: fill var(--timing-function);
 }
 
 .contact-form-field:focus + .contact-form-icon {
@@ -1059,53 +1054,6 @@ img {
    
    color: var(--primary-white-color);
 }
-
-
-
-
-
-
-
-      /* outline: 2px solid #9da4bd;
-
-   
-      transition: outline-color 250ms,
-      background-color 250ms;
-      }
-   
-      .form-checkbox-input:focus+.form-checkbox-custom-checkbox {
-         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-      }
-   
-      .form-checkbox-input:checked+.form-checkbox-custom-checkbox {
-         background-color: var(--accent-txt-cl);
-         outline-color: var(--accent-txt-cl);
-      }
-   
-      .form-checkbox-icon {
-         fill: #ffffff;
-      }
-   
-      .form-checkbox-agreement {
-         font-size: 11px;
-   
-         user-select: none;
-      } */
-
-
-
-
-/* background: #212121; */
-
-/* background: #2196F3;
-   border-radius: 2px; */
-
-
-
- /* outline: 2px solid #9da4bd;
-   outline-offset: -2px;
-      border-radius: 8px;
-      transition: outline-color 250ms, background-color 250ms; */
 
 
 
