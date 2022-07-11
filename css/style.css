@@ -544,7 +544,6 @@ img {
 .footer-container {
    display: flex;
    align-items: baseline;
-   justify-content: space-between;
 }
 
 
@@ -644,7 +643,7 @@ img {
 /* Footer form */
 
 .footer-form {
-   margin-left: 93px;
+   margin-left: auto;
 }
 
 .footer-form-titel {
@@ -879,16 +878,19 @@ img {
    height: 30px;
    padding: 0;
    border: none;
+   color: #000000;
    background-color: var(--primary-white-color);
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    cursor: pointer;
+   transition: var(--timing-function);
 }
 
-.close-icon {
-   width: 18px;
-   height: 18px;
+.button-close:hover {
+   fill: var(--accent-color);
 }
+
+
 
 /* Modal form */
 .form {
@@ -1034,9 +1036,10 @@ img {
 
 .form-btn {
    display: block;
-   width: 200px;
-   height: 50px;
-   margin-left: 124px;
+   min-width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px 55px;
    border: none;
    cursor: pointer;
    background: var(--accent-color);

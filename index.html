@@ -565,9 +565,15 @@
         </div>
         <div class="footer-form">
           <p class="footer-form-titel">Подпишитесь на рассылку</p>
-          <div class="footer-form-register">
+          <form class="footer-form-register">
             <label class="footer-form-group">
-              <input class="footer-form-field" type="email" name="email" placeholder="E-mail" />
+              <input
+                class="footer-form-field"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
             </label>
             <button class="footer-form-button" type="submit">
               <span class="footer-button-text">Подписаться</span>
@@ -575,7 +581,7 @@
                 <use href="./images/icons.svg#footer-icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -639,7 +645,7 @@
         <!-- Modal form end -->
         <p></p>
         <button class="button-close" type="button" aria-label="close" data-modal-close>
-          <svg class="close-icon">
+          <svg class="close-icon" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
