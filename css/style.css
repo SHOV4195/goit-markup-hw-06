@@ -878,12 +878,11 @@ img {
    height: 30px;
    padding: 0;
    border: none;
-   color: #000000;
    background-color: var(--primary-white-color);
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    cursor: pointer;
-   transition: var(--timing-function);
+   transition: fill var(--timing-function);
 }
 
 .button-close:hover {
@@ -916,6 +915,7 @@ img {
 .contact-form-group {
    position: relative;
    display: block;
+   margin-bottom: 10px;
 }
 
 .contact-form-field {
@@ -923,8 +923,6 @@ img {
    height: 40px;
    padding-left: 42px;
    padding-right: 15px;
-   margin-bottom: 10px;
-   margin-top: 4px;
    background-color: transparent;
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
@@ -933,8 +931,14 @@ img {
    transition: border var(--timing-function);
 }
 
-.contact-form-field:focus {
+.contact-form-field:focus,
+.contact-form-field:hover {
    border: 1px solid var(--accent-color);
+}
+
+.contact-form-field:focus + .contact-form-icon,
+.contact-form-field:hover + .contact-form-icon {
+   fill: var(--accent-color);
 }
 
 
@@ -949,7 +953,9 @@ img {
    position: absolute;
    top: 50%;
    left: 12px;
-   transform: translateY(-20%);
+   transform: translateY(0);
+
+   transition: fill var(--timing-function);
 }
 
 .form-message {
@@ -972,7 +978,8 @@ img {
    transition: border var(--timing-function);
 }
 
-.contact-form-message:focus {
+.contact-form-message:focus,
+.contact-form-message:hover {
    border: 1px solid var(--accent-color);
 }
 
@@ -1017,9 +1024,7 @@ img {
    transition: fill var(--timing-function);
 }
 
-.contact-form-field:focus + .contact-form-icon {
-   fill: var(--accent-color);
-}
+
 
 .form-checkbox-agreement {
    margin-left: 9px;
@@ -1046,16 +1051,14 @@ img {
    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
    border-radius: 4px;
    text-decoration: none;
-}
-
-.form-btn-text {
    font-weight: 700;
    font-size: 16px;
    line-height: calc(30 / 16);
-   letter-spacing: 0.06em;
-   
+   letter-spacing: 0.06em; 
    color: var(--primary-white-color);
 }
+
+
 
 
 
